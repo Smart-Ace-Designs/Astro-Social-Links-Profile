@@ -3,6 +3,14 @@ import MainLayout from "@/layouts/MainLayout.astro";
 import Image from "astro/components/Image.astro";
 
 import avatar from "@/assets/avatar-jessica.jpeg";
+
+const socialLinks = [
+  { url: "https://www.github.com", text: "GitHub" },
+  { url: "https://www.frontendmentor.io", text: "Frontend Mentor" },
+  { url: "https://www.linkedin.com", text: "LinkedIn" },
+  { url: "https://www.x.com", text: "Twitter" },
+  { url: "https://www.instagram.com", text: "Instagram" },
+];
 ---
 
 <MainLayout title="Frontend Mentor | Social Links Profile">
@@ -18,7 +26,7 @@ import avatar from "@/assets/avatar-jessica.jpeg";
           class={"rounded-full w-[86px] mb-6"}
         />
       </div>
-      <div class="mb-4">
+      <div class="mb-6">
         <h1 class="mb-2 text-center text-2xl font-semibold">Jessica Randall</h1>
         <p class="mb-6 text-center text-sm text-primaryGreen">
           London, United Kingdom
@@ -30,24 +38,32 @@ import avatar from "@/assets/avatar-jessica.jpeg";
     </div>
 
     <div>
-      <ul>
-        <li>
-          <a href="https://www.github.com" target="_blank" class="text-sm"
-            >GitHub</a
-          >
+      <ul class="grid grid-cols-1 gap-y-4">
+        <li
+          class="rounded-md bg-neutralGrey py-3 text-center text-sm font-semibold"
+        >
+          <a href="https://www.github.com" target="_blank">GitHub</a>
         </li>
-        <li>
+        <li
+          class="rounded-md bg-neutralGrey py-3 text-center text-sm font-semibold"
+        >
           <a href="https://www.frontendmentor.io" target="_blank"
             >Frontend Mentor</a
           >
         </li>
-        <li>
+        <li
+          class="rounded-md bg-neutralGrey py-3 text-center text-sm font-semibold"
+        >
           <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
         </li>
-        <li>
+        <li
+          class="rounded-md bg-neutralGrey py-3 text-center text-sm font-semibold"
+        >
           <a href="https://www.x.com" target="_blank">Twitter</a>
         </li>
-        <li>
+        <li
+          class="rounded-md bg-neutralGrey py-3 text-center text-sm font-semibold"
+        >
           <a href="https://www.instagram.com" target="_blank">Instagram</a>
         </li>
       </ul>
