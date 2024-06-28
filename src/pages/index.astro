@@ -7,27 +7,34 @@ import avatar from "@/assets/avatar-jessica.jpeg";
 
 <MainLayout title="Frontend Mentor | Social Links Profile">
   <section
-    class="mx-auto h-[610px] w-96 rounded-xl bg-neutralDarkGrey px-8 py-8"
+    class="mx-auto h-[610px] w-96 rounded-xl bg-neutralDarkGrey px-8 py-10"
   >
     <div>
-      <Image
-        src={avatar}
-        alt="Avamar"
-        height="80"
-        width="80"
-        loading={"eager"}
-      />
-      <div>
-        <h1>Jessica Randall</h1>
-        <p>London, United Kingdom</p>
-        <p>"Front-end developer and avid reader."</p>
+      <div class="flex justify-center">
+        <Image
+          src={avatar}
+          alt="Avamar"
+          loading={"eager"}
+          class={"rounded-full w-[86px] mb-6"}
+        />
+      </div>
+      <div class="mb-4">
+        <h1 class="mb-2 text-center text-2xl font-semibold">Jessica Randall</h1>
+        <p class="mb-6 text-center text-sm text-primaryGreen">
+          London, United Kingdom
+        </p>
+        <p class="text-center text-sm text-gray-300">
+          "Front-end developer and avid reader."
+        </p>
       </div>
     </div>
 
     <div>
       <ul>
         <li>
-          <a href="https://www.github.com" target="_blank">GitHub</a>
+          <a href="https://www.github.com" target="_blank" class="text-sm"
+            >GitHub</a
+          >
         </li>
         <li>
           <a href="https://www.frontendmentor.io" target="_blank"
