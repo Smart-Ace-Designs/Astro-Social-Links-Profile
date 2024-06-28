@@ -5,11 +5,11 @@ import Image from "astro/components/Image.astro";
 import avatar from "@/assets/avatar-jessica.jpeg";
 
 const socialLinks = [
-  { url: "https://www.github.com", text: "GitHub" },
-  { url: "https://www.frontendmentor.io", text: "Frontend Mentor" },
-  { url: "https://www.linkedin.com", text: "LinkedIn" },
-  { url: "https://www.x.com", text: "Twitter" },
-  { url: "https://www.instagram.com", text: "Instagram" },
+  { url: "https://www.github.com", name: "GitHub" },
+  { url: "https://www.frontendmentor.io", name: "Frontend Mentor" },
+  { url: "https://www.linkedin.com", name: "LinkedIn" },
+  { url: "https://www.x.com", name: "Twitter" },
+  { url: "https://www.instagram.com", name: "Instagram" },
 ];
 ---
 
@@ -39,33 +39,15 @@ const socialLinks = [
 
     <div>
       <ul class="grid grid-cols-1 gap-y-4">
-        <li
-          class="rounded-md bg-neutralGrey py-3 text-center text-sm font-semibold"
-        >
-          <a href="https://www.github.com" target="_blank">GitHub</a>
-        </li>
-        <li
-          class="rounded-md bg-neutralGrey py-3 text-center text-sm font-semibold"
-        >
-          <a href="https://www.frontendmentor.io" target="_blank"
-            >Frontend Mentor</a
-          >
-        </li>
-        <li
-          class="rounded-md bg-neutralGrey py-3 text-center text-sm font-semibold"
-        >
-          <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-        </li>
-        <li
-          class="rounded-md bg-neutralGrey py-3 text-center text-sm font-semibold"
-        >
-          <a href="https://www.x.com" target="_blank">Twitter</a>
-        </li>
-        <li
-          class="rounded-md bg-neutralGrey py-3 text-center text-sm font-semibold"
-        >
-          <a href="https://www.instagram.com" target="_blank">Instagram</a>
-        </li>
+        {
+          socialLinks.map((link) => (
+            <li class="rounded-md bg-neutralGrey py-3 text-center text-sm font-semibold">
+              <a href={link.url} target="_blank">
+                {link.name}
+              </a>
+            </li>
+          ))
+        }
       </ul>
     </div>
   </section>
