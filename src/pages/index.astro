@@ -4,7 +4,12 @@ import Image from "astro/components/Image.astro";
 
 import avatar from "@/assets/avatar-jessica.jpeg";
 
-const socialLinks = [
+interface SocialLink {
+  url: string;
+  name: string;
+}
+
+const socialLinks: SocialLink[] = [
   { url: "https://www.github.com", name: "GitHub" },
   { url: "https://www.frontendmentor.io", name: "Frontend Mentor" },
   { url: "https://www.linkedin.com", name: "LinkedIn" },
