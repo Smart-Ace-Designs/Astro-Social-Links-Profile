@@ -27,7 +27,7 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
-![social-links-profile](https://github.com/Smart-Ace-Designs/Astro-Social-Links-Profile/assets/132539186/98a0a3b9-bd55-454c-85b6-a59af95bfd5e)
+![Social-Links-Profile](https://github.com/Smart-Ace-Designs/Astro-Social-Links-Profile/assets/132539186/88ff8a40-eee3-42cd-9c7d-afbfef9268c9)
 
 ### Links
 
