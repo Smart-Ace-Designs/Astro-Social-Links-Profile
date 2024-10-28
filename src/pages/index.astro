@@ -19,41 +19,45 @@ const socialLinks: SocialLink[] = [
 ---
 
 <MainLayout title="Frontend Mentor | Social Links Profile">
-  <section
-    class="mx-auto h-[480px] w-80 rounded-xl bg-neutralDarkGrey px-8 py-10 sm:h-[610px] sm:w-96"
-  >
-    <div>
-      <div class="flex justify-center">
-        <Image
-          src={avatar}
-          alt="Avamar"
-          loading={"eager"}
-          class={"rounded-full w-[86px] mb-6 hidden sm:block"}
-        />
+  <main class="flex h-screen items-center">
+    <section
+      class="mx-auto h-[480px] w-80 rounded-xl bg-neutralDarkGrey px-8 py-10 sm:h-[610px] sm:w-96"
+    >
+      <div>
+        <div class="flex justify-center">
+          <Image
+            src={avatar}
+            alt="Avamar"
+            loading={"eager"}
+            class={"rounded-full w-[86px] mb-6 hidden sm:block"}
+          />
+        </div>
+        <div class="mb-6">
+          <h1 class="mb-2 text-center text-2xl font-semibold">
+            Jessica Randall
+          </h1>
+          <p class="mb-6 text-center text-sm font-semibold text-primaryGreen">
+            London, United Kingdom
+          </p>
+          <p class="text-center text-sm text-gray-300">
+            "Front-end developer and avid reader."
+          </p>
+        </div>
       </div>
-      <div class="mb-6">
-        <h1 class="mb-2 text-center text-2xl font-semibold">Jessica Randall</h1>
-        <p class="mb-6 text-center text-sm font-semibold text-primaryGreen">
-          London, United Kingdom
-        </p>
-        <p class="text-center text-sm text-gray-300">
-          "Front-end developer and avid reader."
-        </p>
-      </div>
-    </div>
 
-    <div>
-      <ul class="grid grid-cols-1 gap-y-4">
-        {
-          socialLinks.map((link) => (
-            <li class="rounded-md bg-neutralGrey py-3 text-center text-sm font-semibold hover:bg-primaryGreen hover:text-neutralGrey">
-              <a href={link.url} target="_blank" class="block">
-                {link.name}
-              </a>
-            </li>
-          ))
-        }
-      </ul>
-    </div>
-  </section>
+      <div>
+        <ul class="grid grid-cols-1 gap-y-4">
+          {
+            socialLinks.map((link) => (
+              <li class="rounded-md bg-neutralGrey py-3 text-center text-sm font-semibold hover:bg-primaryGreen hover:text-neutralGrey">
+                <a href={link.url} target="_blank" class="block">
+                  {link.name}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </section>
+  </main>
 </MainLayout>
