@@ -4,14 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        primaryGreen: "hsl(75, 94%, 57%)",
-        neutralWhite: "hsl(0, 0%, 100%)",
-        neutralGrey: "hsl(0, 0%, 20%)",
-        neutralDarkGrey: "hsl(0, 0%, 12%)",
-        neutralOffBlack: "hsl(0, 0%, 8%)",
+        "theme-green": "hsl(75, 94%, 57%)",
+        "theme-white": "hsl(0, 0%, 100%)",
+        "theme-grey": "hsl(0, 0%, 20%)",
+        "theme-dark-grey": "hsl(0, 0%, 12%)",
+        "theme-black": "hsl(0, 0%, 8%)",
       },
       fontFamily: {
-        inter: ["inter", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
     },
   },
