@@ -1,10 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400 600 700;
-  src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+@theme {
+  --color-theme-green: hsl(75, 94%, 57%);
+  --color-theme-white: hsl(0, 0%, 100%);
+  --color-theme-grey: hsl(0, 0%, 20%);
+  --color-theme-dark-grey: hsl(0, 0%, 12%);
+  --color-theme-black: hsl(0, 0%, 8%);
+
+  --font-inter: Inter, sans-serif;
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400 600 700;
+    src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  }
 }
