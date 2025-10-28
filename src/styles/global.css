@@ -9,21 +9,3 @@
 
   --font-inter: Inter, sans-serif;
 }
-
-@layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
-  }
-}
-
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400 700;
-  src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
-  font-display: swap;
-}
