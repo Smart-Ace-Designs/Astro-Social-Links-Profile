@@ -24,7 +24,7 @@ const socialLinks: SocialLink[] = [
 >
   <main class="flex h-screen items-center">
     <section
-      class="bg-theme-dark-grey mx-auto h-[480px] w-80 rounded-xl px-8 py-10 sm:h-[610px] sm:w-96"
+      class="mx-auto h-[480px] w-80 rounded-xl bg-theme-dark-grey px-8 py-10 sm:h-[610px] sm:w-96"
     >
       <div>
         <div class="flex justify-center">
@@ -39,7 +39,7 @@ const socialLinks: SocialLink[] = [
           <h1 class="mb-2 text-center text-2xl font-semibold">
             Jessica Randall
           </h1>
-          <p class="text-theme-green mb-6 text-center text-sm font-semibold">
+          <p class="mb-6 text-center text-sm font-semibold text-theme-green">
             London, United Kingdom
           </p>
           <p class="text-center text-sm text-gray-300">
@@ -52,7 +52,7 @@ const socialLinks: SocialLink[] = [
         <ul class="grid grid-cols-1 gap-y-4">
           {
             socialLinks.map((link) => (
-              <li class="hover:bg-theme-green bg-theme-grey hover:text-theme-grey rounded-md py-3 text-center text-sm font-semibold">
+              <li class="rounded-md bg-theme-grey py-3 text-center text-sm font-semibold hover:bg-theme-green hover:text-theme-grey">
                 <a href={link.url} target="_blank" class="block">
                   {link.name}
                 </a>
