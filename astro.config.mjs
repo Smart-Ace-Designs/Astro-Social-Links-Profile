@@ -17,7 +17,6 @@ export default defineConfig({
         cssVariable: "--font-inter",
         weights: [400, 600],
         styles: ["normal"],
-        subsets: ["latin"],
       },
     ],
   },
